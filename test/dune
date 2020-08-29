@@ -1,0 +1,3 @@
+(test
+ (name main)
+ (libraries alcotest fmt logs logs.fmt diff sink))

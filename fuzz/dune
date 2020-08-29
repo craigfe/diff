@@ -1,0 +1,22 @@
+(executable
+ (name main)
+ (libraries diff crowbar fmt sink))
+
+(rule
+ (alias fuzz)
+ (action
+  (run ./main.exe)))
+
+(rule
+ (alias fuzz-afl)
+ (deps
+  (source_tree input))
+ (action
+  (run afl-fuzz -i inputs -o findings -- ./main.exe @@)))
+
+(rule
+ (alias fuzz-bun)
+ (deps
+  (source_tree input))
+ (action
+  (run bun --input inputs --output findings -- ./main.exe)))

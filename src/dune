@@ -1,0 +1,4 @@
+(library
+ (name diff)
+ (public_name diff)
+ (libraries fmt logs sink))
