@@ -9,6 +9,7 @@ doc: "https://CraigFe.github.io/diff/"
 bug-reports: "https://github.com/CraigFe/diff/issues"
 depends: [
   "dune" {>= "2.7"}
+  "sink"
   "alcotest" {with-test}
   "fmt" {with-test}
   "odoc" {with-doc}
@@ -28,3 +29,11 @@ build: [
   ]
 ]
 dev-repo: "git+https://github.com/CraigFe/diff.git"
+pin-depends: [
+  "ppx_alcotest.dev"           "git+https://github.com/CraigFe/sink#fda1c6d97ad7dc795c99e3dba75c3375c11d1d0d"
+  "ppx_brands.dev"             "git+https://github.com/CraigFe/sink#fda1c6d97ad7dc795c99e3dba75c3375c11d1d0d"
+  "ppx_deriving_infix.dev"     "git+https://github.com/CraigFe/sink#fda1c6d97ad7dc795c99e3dba75c3375c11d1d0d"
+  "ppx_deriving_phantom.dev"   "git+https://github.com/CraigFe/sink#fda1c6d97ad7dc795c99e3dba75c3375c11d1d0d"
+  "ppx_deriving_typeclass.dev" "git+https://github.com/CraigFe/sink#fda1c6d97ad7dc795c99e3dba75c3375c11d1d0d"
+  "sink.dev"                   "git+https://github.com/CraigFe/sink#fda1c6d97ad7dc795c99e3dba75c3375c11d1d0d"
+]

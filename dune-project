@@ -12,4 +12,4 @@
  (synopsis "Tree diffing and edit-distance algorithms")
  (description "Tree diffing and edit-distance algorithms")
  (documentation https://CraigFe.github.io/diff/)
- (depends (alcotest :with-test) (fmt :with-test)))
+ (depends sink (alcotest :with-test) (fmt :with-test)))

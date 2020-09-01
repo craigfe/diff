@@ -1,13 +1,8 @@
-# diff
+## `Diff` – tree diffing and edit-distance algorithms
 
-Tree diffing and edit-distance algorithms
+<p align="center">🚧&nbsp;&nbsp;&nbsp;<b><i>Highly unstable and incomplete</i></b>&nbsp;&nbsp;&nbsp;🚧</p>
 
-## Installation
+> Experimental generic tree-diffing algorithms. Work-in-progress towards adding
+> [subcomponent diffing][subcomponent-diffing] support to Alcotest.
 
-```
-opam pin add --yes https://github.com/CraigFe/diff.git
-opam install diff
-```
-
-If you want to contribute to the project, please read
-[CONTRIBUTING.md](CONTRIBUTING.md).
+[subcomponent-diffing]: https://github.com/mirage/alcotest/pull/247
